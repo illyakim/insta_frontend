@@ -1,0 +1,96 @@
+.register-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    border: 2px solid #dbdbdb;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px
+}
+
+.card h2 {
+    color: rgb(74, 74, 74)
+}
+
+.input {
+    margin-bottom: 5px;
+    width: 100%;
+    height: 35px;
+    color: #737373;
+    border-radius: 3px;
+    border: 1px solid #DBDBDB;
+    background: #FAFAFA;
+    padding-left: 10px;
+}
+
+#or {
+    color: #737373;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+.card p {
+    color: #737373;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+#have-account {
+    color: #000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+#have-account a {
+    color: #0095F6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.card a {
+    color: #00376B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+
+.or-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.line {
+    height: 2px;
+    width: 100px;
+    background: #DBDBDB;
+}

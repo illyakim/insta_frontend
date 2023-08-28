@@ -1,0 +1,16 @@
+.header-inner {
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 200px
+}
+
+Image {
+    margin-right: 10px
+}
+
+.header-search {
+    border-radius: 3px;
+    border: 1px solid #DBDBDB;
+    padding: 5px 70px;
+    text-align: center;
+}

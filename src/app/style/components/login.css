@@ -1,0 +1,15 @@
+.login-page {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-page-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
