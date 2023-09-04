@@ -10,10 +10,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function UserRegister() {
-    const [step, setStep] = useState(1)
     return (
         <section className="register-page">
-            {step === 1 &&
                 <div className='container'>
                     <div className="card">
                         <Image src={logo} />
@@ -39,36 +37,9 @@ export default function UserRegister() {
                             <button className="primary-button">Sign up</button></Link>
                     </div>
                     <div className="card">
-                        <p id="have-account">Have an account? <Link href="posts">Log in</Link></p>
-                    </div>
-                </div>}
-
-            {step === 2 && <div className='container'>
-                <div className="card">
-                    <Image src={logo} />
-
-                    <div className='login-page-pic'>
-                        <Image src={loginpage} />
-                        <div>
-                            <input className="input" placeholder="Phone number" />
-                            <input className="input" placeholder="Password" />
-                            <Link href="/posts">
-                                <button className="primary-button">Log in</button>
-                            </Link>
-                            <div className='or-line'>
-                                <div className='line'></div>
-                                <p id="or">or</p>
-                                <div className='line'></div>
-                            </div>
-                            <a >Log in with Facebook</a>
-                            <a >Forgot password?</a>
-                        </div>
-                    </div>
+                    <p id="have-account">Have an account? <Link href="login">Log in</Link></p>
                 </div>
-                <div className="card">
-                    <p id="have-account">Don't have an account? <Link href="/register">Sign up</Link></p>
-                </div>
-            </div>}
+            </div>
         </section>
 
 

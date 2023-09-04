@@ -1,5 +1,7 @@
 export default function MyPost({ item }) {
     return (
-        <div>{item}</div>
+        <div className="post-sm">
+            <img src={item} alt="" />
+        </div>
     )
 }

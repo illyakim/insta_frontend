@@ -1,3 +1,17 @@
+.main {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.login-main {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.login-main:hover {
+    color: rgba(0, 0, 0, .7)
+}
 .df {
     display: flex;
     align-items: center;
@@ -12,7 +26,7 @@
 }
 
 .container {
-    width: 30%;
+    margin: 20px
 }
 
 .wh {
@@ -43,7 +57,7 @@ a:hover {
     cursor: pointer;
 }
 
-.pointer:hover {
+.pointer {
     cursor: pointer;
 }
 
@@ -56,4 +70,26 @@ a:hover {
 
 .font {
     font-family: Arial, Helvetica, sans-serif;
+}
+.flex-start {
+    justify-content: flex-start;
+}
+
+#i {
+    font-size: 10px;
+    color: grey;
+    font-style: normal;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.small-icon {
+    width: 30px;
+    height: 30px
 }

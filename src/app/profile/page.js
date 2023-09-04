@@ -1,5 +1,8 @@
+'use client'
+import { useState } from 'react'
 import Header from '../../components/header'
 import MyPosts from '@/components/myposts'
+import ModalPostView from '@/components/ModalPostView'
 
 import profile from '../images/Profile-Pic-M.png'
 import more from '../images/More.svg'
@@ -11,9 +14,13 @@ import post5 from '../images/post5.png'
 import post6 from '../images/post6.png'
 import Image from 'next/image'
 
-// const posts = [post1, post2, post3, post4, post5, post6]
+const posts = [post1, post2, post3, post4, post5, post6]
 
 export default function PostsPage() {
+    const [modalPostViewIsOpen, setModalPostViewIsOpen] = useState(false)
+    const closeModalPostView = () => {
+        setModalPostViewIsOpen(false)
+    }
     return (
         <main>
             <Header />
@@ -26,12 +33,18 @@ export default function PostsPage() {
                             <button className='follow-button'>Follow</button>
                             <Image src={more} className='pointer' />
                         </div>
+                        <div className='stats font'>
+                            <p><span>6</span> posts</p>
+                            <p><span>5</span> followers</p>
+                            <p><span>10</span> following</p>
+                        </div>
                         <p className='full-name'>Terry Lucas</p>
                     </div>
                 </div>
                 <div className='underline'></div>
-                <div>
-                    {/* <MyPosts posts={posts} /> */}
+                {modalPostViewIsOpen && <ModalPostView close={closeModalPostView} />}
+                <div onClick={() => setModalPostViewIsOpen(true)}>
+                    <MyPosts posts={posts} />
                 </div>
             </div>
         </main>

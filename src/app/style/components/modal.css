@@ -1,0 +1,168 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+}
+
+.modal-backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 1;
+}
+
+.modal-inner-new-post {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+    width: 90%;
+    max-width: 600px;
+    height: 90%;
+    margin: 50px auto;
+    z-index: 2;
+    text-align: center;
+    padding: 0
+}
+
+.drag-photos-area {
+    margin-top: 25%
+}
+
+
+.new-post {
+    border: none;
+    padding: 13px 25px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.new-post-img {
+    width: 150px;
+    height: 100px
+}
+
+
+.modal-inner-post-view {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+    width: 90%;
+    max-width: 800px;
+    height: 90%;
+    margin: 50px auto;
+    z-index: 2;
+    text-align: center;
+    padding: 0
+}
+
+
+.comment-section {
+    width: 100%;
+}
+
+.post-view-header {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 10px 0 10px 20px
+}
+
+.post-view-header h3 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.post-description {
+    display: flex;
+    font-size: 15px;
+    padding: 10px 0 10px 20px
+}
+
+.post-description p {
+    line-height: 0;
+}
+
+.i i {
+    margin-right: 20px;
+}
+
+.comments {
+    height: 45%
+}
+
+.comments h3 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.comments p {
+    font-size: 12px;
+}
+
+.insights {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
+.insights button {
+    border: none;
+    font-weight: bold;
+}
+
+.insights button:first-child {
+    background: none;
+    color: #0095F6;
+}
+
+.insights button:last-child {
+    background-color: #f4f4f4;
+    padding: 8px 30px;
+    border-radius: 5px;
+}
+
+.post-actions {
+    justify-content: space-between;
+    margin: 20px 0 10px 20px;
+}
+
+.liked-by {
+    font-size: 12px;
+    text-align: left;
+    margin: 10px 20px
+}
+
+.liked-by span:last-child {
+    font-size: 10px;
+}
+
+.add-comment {
+    justify-content: space-between;
+    margin: 20px
+}
+
+.add-comment input {
+    border: none;
+    padding: 15px;
+    background: none;
+}
+
+.post-button {
+    background: none;
+    color: #0095F6;
+    border: none;
+    font-weight: bold;
+}

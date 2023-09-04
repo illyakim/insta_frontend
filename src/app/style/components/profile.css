@@ -1,0 +1,45 @@
+.profile-details {
+    margin: 50px 0;
+}
+
+
+.profile-name {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 350;
+}
+
+.full-name {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+.posts {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+    justify-content: center;
+    margin: 50px;
+    cursor: pointer;
+}
+
+.post-sm img {
+    width: 25vw;
+    height: 45vh;
+    gap: 30px
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats span {
+    font-weight: bold;
+}
+
+.stats p {
+    cursor: pointer;
+}
