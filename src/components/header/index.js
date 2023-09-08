@@ -20,17 +20,17 @@ export default function Header() {
         <header className='header'>
             <div >
                 <div className='header-inner df'>
-                    <Image src={logo} />
+                    <Image src={logo} alt="" />
                     <input className='header-search' placeholder='Search'>
                     </input>
                     {modalNewPostIsOpen && <ModalNewPost close={closeModalNewPost} />}
                     <div className='icons df gap pointer'>
-                        <Image src={home} />
-                        <Image src={messenger} />
-                        <Image src={newpost} onClick={() => setModalNewPostIsOpen(true)} />
-                        <Image src={findpeople} />
-                        <Image src={like} />
-                        <Image src={profile} />
+                        <Image src={home} alt="" />
+                        <Image src={messenger} alt="" />
+                        <Image src={newpost} onClick={() => setModalNewPostIsOpen(true)} alt="" />
+                        <Image src={findpeople} alt="" />
+                        <Image src={like} alt="" />
+                        <Image src={profile} alt="" />
                     </div>
                 </div>
                 <div className='underline'></div>

@@ -18,3 +18,12 @@
     opacity: 0.7;
     background: #0095F6;
 }
+
+.share {
+    color: #0095F6;
+    border: none;
+    background: none;
+    font-weight: bold;
+    font-size: 15px;
+
+}

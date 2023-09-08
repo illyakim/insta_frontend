@@ -1,7 +1,7 @@
-export default function MyPost({ item }) {
+export default function MyPost({ item, onClick }) {
     return (
-        <div className="post-sm">
-            <img src={item} alt="" />
+        <div className="post-sm" onClick={() => onClick(item)}>
+            <img src={item.src} alt="" />
         </div>
     )
 }

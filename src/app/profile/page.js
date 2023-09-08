@@ -18,20 +18,25 @@ const posts = [post1, post2, post3, post4, post5, post6]
 
 export default function PostsPage() {
     const [modalPostViewIsOpen, setModalPostViewIsOpen] = useState(false)
+    const [currentPost, setCurrentPost] = useState({})
     const closeModalPostView = () => {
         setModalPostViewIsOpen(false)
+    }
+    const openCurrentPost = (post) => {
+        setCurrentPost(post)
+        setModalPostViewIsOpen(true)
     }
     return (
         <main>
             <Header />
             <div className='font'>
                 <div className='profile-details df'>
-                    <Image src={profile} className='marg' />
+                    <Image src={profile} className='marg' alt="" />
                     <div>
                         <div className='df gap2'>
                             <h3 className='profile-name'>terrylucas</h3>
                             <button className='follow-button'>Follow</button>
-                            <Image src={more} className='pointer' />
+                            <Image src={more} className='pointer' alt="" />
                         </div>
                         <div className='stats font'>
                             <p><span>6</span> posts</p>
@@ -42,10 +47,10 @@ export default function PostsPage() {
                     </div>
                 </div>
                 <div className='underline'></div>
-                {modalPostViewIsOpen && <ModalPostView close={closeModalPostView} />}
-                <div onClick={() => setModalPostViewIsOpen(true)}>
-                    <MyPosts posts={posts} />
-                </div>
+                {modalPostViewIsOpen && <ModalPostView currentPost={currentPost} close={closeModalPostView} />}
+
+                <MyPosts onClick={openCurrentPost} posts={posts} />
+
             </div>
         </main>
     )

@@ -27,8 +27,10 @@ export default function UserLogin() {
                                     <p id="or">or</p>
                                     <div className='line'></div>
                                 </div>
-                                <a href>Log in with Facebook</a>
-                                <a href>Forgot password?</a>
+                                <div className='df flex-column'>
+                                    <a href>Log in with Facebook</a>
+                                    <a href>Forgot password?</a>
+                                </div>
                             </div>
                         </div>
                     </div>
