@@ -25,4 +25,6 @@
     background: none;
     font-weight: bold;
     font-size: 15px;
+    position: absolute;
+        right: 5px
 }

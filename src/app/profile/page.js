@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Header from '../../components/header'
 import MyPosts from '@/components/myposts'
 import ModalPostView from '@/components/ModalPostView'
+import ModalFollowers from '@/components/ModalFollowers'
 
 import profile from '../images/Profile-Pic-M.png'
 import more from '../images/More.svg'
@@ -26,6 +27,10 @@ export default function PostsPage() {
         setCurrentPost(post)
         setModalPostViewIsOpen(true)
     }
+    const [modalFollowersIsOpen, setModalFollowersIsOpen] = useState(false)
+    const closeModalFollowers = () => {
+        setModalFollowersIsOpen(false)
+    }
     return (
         <main>
             <Header />
@@ -40,12 +45,13 @@ export default function PostsPage() {
                         </div>
                         <div className='stats font'>
                             <p><span>6</span> posts</p>
-                            <p><span>5</span> followers</p>
+                            <p onClick={() => setModalFollowersIsOpen(true)}><span>5</span> followers</p>
                             <p><span>10</span> following</p>
                         </div>
                         <p className='full-name'>Terry Lucas</p>
                     </div>
                 </div>
+                {modalFollowersIsOpen && <ModalFollowers close={closeModalFollowers} />}
                 <div className='underline'></div>
                 {modalPostViewIsOpen && <ModalPostView currentPost={currentPost} close={closeModalPostView} />}
 

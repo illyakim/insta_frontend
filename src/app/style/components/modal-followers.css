@@ -1,0 +1,63 @@
+.modal-followers {
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    top: 15%;
+    left: 35%
+}
+
+.followers-header button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    position: absolute;
+    right: 5px
+}
+
+.followers-header h3 {
+    font-size: 15px;
+}
+
+.followers-list {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.followers-list button {
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 7px 15px;
+    position: absolute;
+    right: 10px;
+}
+
+.follower-details {
+    flex-direction: column;
+    line-height: 0;
+}
+
+.follower-name {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.full-name {
+    font-size: 12px;
+    color: grey;
+    font-weight: 300;
+}
+
+.follower-details-img {
+    position: absolute;
+    left: 10px;
+}
+
+.follower-img {
+    margin-right: 10px
+}
